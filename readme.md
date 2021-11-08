@@ -4,3 +4,4 @@
 - Testing sync with git
 - One more test
 - Changing branch test
+- Seems that eveyrhing works
