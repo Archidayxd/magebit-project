@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pineapple</title>
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 
 <body>
@@ -13,17 +14,13 @@
         <div class="subscription">
             <header class="header">
                 <nav class="navigation">
-                    <div class="navigation__logo">
-                        <div class="navigation__image"><img src="/images/logo.svg" alt="Pineapple logo image"></div>
-                        <div class="navigation__name"><img src="/images/pineapple.svg" alt="pineapple logo name"></div>
-                    </div>
-                    <div class="navigation__items">
-                        <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">How it works</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
+                    <ul>
+                        <li class="left"><a href="#"></a><img src="/images/logo.svg" alt="Pineapple logo image"></li>
+                        <li class="left"><a href="#"></a><img src="/images/pineapple.svg" alt="pineapple logo name"></li>
+                        <li class="right"><a href="#">About</a></li>
+                        <li class="right"><a href="#">How it works</a></li>
+                        <li class="right"><a href="#">Contact</a></li>
+                    </ul>
                 </nav>
             </header>
             <main>
@@ -47,8 +44,8 @@
                 </div>
             </footer>
         </div>
-        <div class="bg-image"></div>
     </div>
+    <div class="bg-image"></div>
 </body>
 
 </html>
