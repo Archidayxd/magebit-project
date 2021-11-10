@@ -14,6 +14,16 @@ a {
   font-weight: 400;
 }
 
+a:hover {
+  color: #4066a5;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+a:active {
+  color: #233759;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,10 +114,87 @@ a {
   width: 100%;
   border-style: none;
   border-left: 4px solid #4066a5;
+  font-size: 25px;
+  padding: 10px;
+  padding-left: 50px;
+}
+
+.subscription__input input:hover {
+  -webkit-box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+          box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+}
+
+.subscription__input input:focus {
+  -webkit-box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+          box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+  padding-left: 10px;
+}
+
+.subscription__input input::-webkit-input-placeholder {
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+.subscription__input input:-ms-input-placeholder {
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+.subscription__input input::-ms-input-placeholder {
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+.subscription__input input::placeholder {
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+.subscription__input input:focus::-webkit-input-placeholder {
+  color: transparent;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.subscription__input input:focus:-ms-input-placeholder {
+  color: transparent;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.subscription__input input:focus::-ms-input-placeholder {
+  color: transparent;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.subscription__input input:focus::placeholder {
+  color: transparent;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.subscription__checkbox input {
+  height: 20px;
+  width: 20px;
 }
 
 .sub-wrapper {
-  max-width: 440px;
+  max-width: 420px;
   margin: 0 auto;
+}
+
+.subscription__terms {
+  margin-top: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscription__terms div:first-child {
+  padding-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */

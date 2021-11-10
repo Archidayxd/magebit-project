@@ -13,6 +13,15 @@ a {
   font-weight: 400;
 }
 
+a:hover {
+  color: #4066a5;
+  transition: 0.2s;
+}
+
+a:active {
+  color: #233759;
+}
+
 .container {
   display: flex;
   flex-wrap: nowrap;
@@ -98,16 +107,49 @@ a {
     width: 100%;
     border-style: none;
     border-left: 4px solid #4066a5;
+    font-size: 25px;
+    padding: 10px;
+    padding-left: 50px;
+  }
+  &__input input:hover {
+    box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
   }
 
-  &__checkbox {
+  &__input input:focus {
+    box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+    padding-left: 10px;
   }
 
-  &__terms {
+  &__input input::placeholder {
+    padding-left: 10px;
+    font-size: 18px;
+  }
+
+  &__input input:focus::placeholder {
+    color: transparent;
+    transition: 0.2s;
+  }
+
+  &__checkbox input {
+    height: 20px;
+    width: 20px;
+  }
+
+  &__service {
   }
 }
 
 .sub-wrapper {
-  max-width: 440px;
+  max-width: 420px;
   margin: 0 auto;
+}
+
+.subscription__terms {
+  margin-top: 7%;
+  display: flex;
+  align-items: center;
+}
+
+.subscription__terms div:first-child {
+  padding-right: 10px;
 }
