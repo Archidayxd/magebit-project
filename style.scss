@@ -2,52 +2,112 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Quicksand", sans-serif;
-}
-
-ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #6a707b;
   font-size: 16px;
-}
-
-body {
-  height: 100%;
-  width: 100%;
+  line-height: 26px;
+  font-weight: 400;
 }
 
 .container {
-  position: relative;
-  width: 100%;
-  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  /* padding: 20px 100px; */
-}
-
-.contact-box {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background-color: #fff;
-  grid-template-columns: auto 920px;
+  flex-wrap: nowrap;
 }
 
 .left {
-  /* padding: 25px 40px; */
-  max-width: 600px;
-  margin: 0 auto;
+  background-color: #f2f5fa;
+  max-height: 100%;
+  width: 680px;
 }
 
 .right {
-  background: url("img/bg.jpg") no-repeat;
-  background-size: cover;
-  height: 830px;
+}
+
+.right img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 100vh;
+}
+
+.wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 10.5%;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.menu li:first-child {
+  padding-right: 2.21%;
+}
+
+.menu li:nth-child(2) {
+  padding-top: 7px;
+  margin-right: auto;
+}
+
+.menu li:nth-child(3),
+.menu li:nth-child(4) {
+  padding-right: 4.41%;
+}
+
+.subscription-form {
+  margin-top: 34.63%;
+}
+
+.subscription-form {
+}
+.subscription {
+  &__title {
+    font-family: Georgia, sans-serif;
+    font-size: 32px;
+    line-height: 44px;
+    position: relative;
+    bottom: 15px;
+    color: #131821;
+  }
+  &__subtitle {
+    color: #6a707b;
+  }
+
+  &__input {
+    padding-top: 5%;
+    padding-left: 10%;
+  }
+
+  &__input::after {
+    content: "";
+    position: absolute;
+    width: 5%;
+    height: 60px;
+    background-color: white;
+    background-image: url(/img/ic_arrow.png);
+  }
+
+  &__input input {
+    height: 60px;
+    width: 100%;
+    border-style: none;
+    border-left: 4px solid #4066a5;
+  }
+
+  &__checkbox {
+  }
+
+  &__terms {
+  }
+}
+
+.sub-wrapper {
+  max-width: 440px;
+  margin: 0 auto;
 }
