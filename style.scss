@@ -202,42 +202,70 @@
   }
 }
 
-.facebook-icon:hover {
-  background-color: #4267b2;
-  border: 2px solid #4267b2;
-  transition: 0.2s;
-  path {
-    fill: #ffffff;
-    opacity: 1;
+.facebook-icon {
+  &:hover {
+    background-color: #4267b2;
+    border: 2px solid #4267b2;
+    transition: 0.2s;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+    path {
+      fill: #ffffff;
+      opacity: 1;
+    }
+  }
+  &:active {
+    background-color: #2f4a80;
+    border: 2px solid #2f4a80;
   }
 }
 
-.instagram-icon:hover {
-  background-color: #c13584;
-  border: 2px solid #c13584;
-  transition: 0.2s;
-  path {
-    fill: #ffffff;
-    opacity: 1;
+.instagram-icon {
+  &:hover {
+    background-color: #c13584;
+    border: 2px solid #c13584;
+    transition: 0.2s;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+    path {
+      fill: #ffffff;
+      opacity: 1;
+    }
+  }
+  &:active {
+    background-color: #8f2762;
+    border: 2px solid #8f2762;
   }
 }
 
-.twitter-icon:hover {
-  background-color: #1da1f2;
-  border: 2px solid #1da1f2;
-  transition: 0.2s;
-  path {
-    fill: #ffffff;
-    opacity: 1;
+.twitter-icon {
+  &:hover {
+    background-color: #1da1f2;
+    border: 2px solid #1da1f2;
+    transition: 0.2s;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+    path {
+      fill: #ffffff;
+      opacity: 1;
+    }
+  }
+  &:active {
+    background-color: #177fbf;
+    border: 2px solid #177fbf;
   }
 }
 
-.youtube-icon:hover {
-  background-color: #ff0000;
-  border: 2px solid #ff0000;
-  transition: 0.2s;
-  path {
-    fill: #ffffff;
-    opacity: 1;
+.youtube-icon {
+  &:hover {
+    background-color: #ff0000;
+    border: 2px solid #ff0000;
+    transition: 0.2s;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+    path {
+      fill: #ffffff;
+      opacity: 1;
+    }
+  }
+  &:active {
+    background-color: #cc0000;
+    border: 2px solid #cc0000;
   }
 }
