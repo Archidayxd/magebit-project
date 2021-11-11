@@ -177,6 +177,8 @@
   border-style: none;
   background-color: white;
   text-align: center;
+  padding-top: 4px;
+  padding-right: 20px;
 }
 
 .subscription__input button:hover {
