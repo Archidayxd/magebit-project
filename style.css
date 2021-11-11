@@ -6,7 +6,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
+.menu a {
   text-decoration: none;
   color: #6a707b;
   font-size: 16px;
@@ -14,13 +14,13 @@ a {
   font-weight: 400;
 }
 
-a:hover {
+.menu a:hover {
   color: #4066a5;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-a:active {
+.menu a:active {
   color: #233759;
 }
 
@@ -196,5 +196,106 @@ a:active {
 
 .subscription__terms div:first-child {
   padding-right: 10px;
+}
+
+.subscription__terms {
+  color: #6a707b;
+}
+
+.subscription__terms a {
+  color: #131821;
+}
+
+.social-icons {
+  margin-top: 10%;
+}
+
+.social-icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.social-icons ul li {
+  border: 2px solid #e3e3e4;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.social-icons ul li a i {
+  line-height: 100px;
+}
+
+.social-icons::before {
+  margin-bottom: 10%;
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #e3e3e4;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.facebook-icon:hover {
+  background-color: #4267b2;
+  border: 2px solid #4267b2;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.facebook-icon:hover path {
+  fill: #ffffff;
+  opacity: 1;
+}
+
+.instagram-icon:hover {
+  background-color: #c13584;
+  border: 2px solid #c13584;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.instagram-icon:hover path {
+  fill: #ffffff;
+  opacity: 1;
+}
+
+.twitter-icon:hover {
+  background-color: #1da1f2;
+  border: 2px solid #1da1f2;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.twitter-icon:hover path {
+  fill: #ffffff;
+  opacity: 1;
+}
+
+.youtube-icon:hover {
+  background-color: #ff0000;
+  border: 2px solid #ff0000;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.youtube-icon:hover path {
+  fill: #ffffff;
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
