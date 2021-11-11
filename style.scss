@@ -33,9 +33,6 @@
   width: 680px;
 }
 
-.right {
-}
-
 .right img {
   max-width: 100%;
   object-fit: cover;
@@ -73,8 +70,6 @@
   margin-top: 34.63%;
 }
 
-.subscription-form {
-}
 .subscription {
   &__title {
     font-family: Georgia, sans-serif;
@@ -94,12 +89,12 @@
   }
 
   &__input::after {
-    content: "";
-    position: absolute;
-    width: 5%;
-    height: 60px;
-    background-color: white;
-    background-image: url(/img/ic_arrow.png);
+    // content: "";
+    // position: absolute;
+    // width: 5%;
+    // height: 60px;
+    // background-color: white;
+    // background-image: url(/img/ic_arrow.png);
   }
 
   &__input input {
@@ -139,6 +134,20 @@
   }
 }
 
+.subscription__input button {
+  width: 5%;
+  height: 60px;
+  position: absolute;
+  border-style: none;
+  background-color: white;
+  text-align: center;
+
+  &:hover {
+    background-color: rgb(192, 192, 192);
+    cursor: pointer;
+  }
+}
+
 .sub-wrapper {
   max-width: 420px;
   margin: 0 auto;
@@ -160,8 +169,6 @@
 
 .subscription__terms a {
   color: #131821;
-}
-.border-line {
 }
 
 .social-icons {
