@@ -88,15 +88,6 @@
     padding-left: 10%;
   }
 
-  &__input::after {
-    // content: "";
-    // position: absolute;
-    // width: 5%;
-    // height: 60px;
-    // background-color: white;
-    // background-image: url(/img/ic_arrow.png);
-  }
-
   &__input input {
     height: 60px;
     width: 100%;
@@ -112,11 +103,11 @@
 
   &__input input:focus {
     box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
-    padding-left: 10px;
+    // padding-left: 10px;
   }
 
   &__input input::placeholder {
-    padding-left: 10px;
+    // padding-left: 10px;
     font-size: 18px;
   }
 

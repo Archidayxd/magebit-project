@@ -118,26 +118,21 @@
 .subscription__input input:focus {
   -webkit-box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
           box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
-  padding-left: 10px;
 }
 
 .subscription__input input::-webkit-input-placeholder {
-  padding-left: 10px;
   font-size: 18px;
 }
 
 .subscription__input input:-ms-input-placeholder {
-  padding-left: 10px;
   font-size: 18px;
 }
 
 .subscription__input input::-ms-input-placeholder {
-  padding-left: 10px;
   font-size: 18px;
 }
 
 .subscription__input input::placeholder {
-  padding-left: 10px;
   font-size: 18px;
 }
 
