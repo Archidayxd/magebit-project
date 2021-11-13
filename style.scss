@@ -370,6 +370,13 @@
     &__input {
       padding-left: 0px;
       padding-top: 20px;
+
+      button {
+        margin-left: -40px;
+        height: 60px;
+        width: 40px;
+        border: 0;
+      }
     }
 
     &__input input {
@@ -389,13 +396,7 @@
       margin: 0 auto;
     }
   }
-  .subscription__input button {
-    margin-left: -40px;
-    height: 60px;
-    width: 40px;
-    border: 0;
-    -webkit-appearance: none;
-  }
+
   .social-icons {
     margin-top: 20px;
     &::before {
