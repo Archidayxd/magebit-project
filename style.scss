@@ -117,13 +117,54 @@
     transition: 0.2s;
   }
 
-  &__checkbox input {
-    height: 20px;
-    width: 20px;
+  // &__checkbox input {
+  //   height: 20px;
+  //   width: 20px;
+  // }
+
+  &__checkbox {
+    .checkbox {
+      opacity: 0;
+      position: relative;
+      height: 26px;
+      width: 24px;
+      left: 30px;
+      bottom: 2px;
+      z-index: 1;
+    }
+  }
+
+  &__checkbox-fake {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #e3e3e4;
+    position: relative;
+    border-radius: 3px;
+  }
+
+  &__checkbox-fake::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    height: 26px;
+    width: 26px;
+    background: url(/img/ic_checkmark.svg) no-repeat center center;
+    background-color: #4066a5;
+    border-radius: 3px;
+    opacity: 0;
+    transition: 0.2s;
   }
 
   &__service {
   }
+}
+
+.checkbox:checked + .subscription__checkbox-fake::before {
+  opacity: 1;
 }
 
 .subscription__input button {
