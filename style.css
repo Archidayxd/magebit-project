@@ -6,6 +6,33 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.left {
+  background-color: #f2f5fa;
+  max-height: 100%;
+  width: 680px;
+}
+
+.right img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vh;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 114px;
+}
+
 .menu a {
   text-decoration: none;
   color: #6a707b;
@@ -22,33 +49,6 @@
 
 .menu a:active {
   color: #233759;
-}
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-}
-
-.left {
-  background-color: #f2f5fa;
-  max-height: 100%;
-  width: 680px;
-}
-
-.right img {
-  max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100vh;
-}
-
-.wrapper {
-  max-width: 500px;
-  margin: 0 auto;
-  padding-top: 114px;
 }
 
 .menu ul {
@@ -83,6 +83,11 @@
   margin-top: 234px;
 }
 
+.sub-wrapper {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
 .subscription__title {
   font-family: Georgia, sans-serif;
   font-size: 32px;
@@ -99,6 +104,22 @@
 .subscription__input {
   padding-top: 50px;
   padding-left: 100px;
+}
+
+.subscription__input button {
+  width: 83px;
+  height: 60px;
+  position: absolute;
+  border-style: none;
+  background-color: white;
+  text-align: center;
+  padding-top: 4px;
+  padding-right: 20px;
+}
+
+.subscription__input button:hover {
+  background-color: silver;
+  cursor: pointer;
 }
 
 .subscription__input input {
@@ -202,27 +223,6 @@
   opacity: 1;
 }
 
-.subscription__input button {
-  width: 83px;
-  height: 60px;
-  position: absolute;
-  border-style: none;
-  background-color: white;
-  text-align: center;
-  padding-top: 4px;
-  padding-right: 20px;
-}
-
-.subscription__input button:hover {
-  background-color: silver;
-  cursor: pointer;
-}
-
-.sub-wrapper {
-  max-width: 420px;
-  margin: 0 auto;
-}
-
 .subscription__terms {
   margin-top: 53px;
   display: -webkit-box;
@@ -231,14 +231,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #6a707b;
 }
 
 .subscription__terms div:first-child {
   padding-right: 10px;
-}
-
-.subscription__terms {
-  color: #6a707b;
 }
 
 .subscription__terms a {
@@ -291,7 +288,7 @@
   max-width: 90%;
 }
 
-.facebook-icon:hover {
+.social-icons .facebook-icon:hover {
   background-color: #4267b2;
   border: 2px solid #4267b2;
   -webkit-transition: 0.2s;
@@ -300,17 +297,17 @@
           box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
 }
 
-.facebook-icon:hover path {
+.social-icons .facebook-icon:hover path {
   fill: #ffffff;
   opacity: 1;
 }
 
-.facebook-icon:active {
+.social-icons .facebook-icon:active {
   background-color: #2f4a80;
   border: 2px solid #2f4a80;
 }
 
-.instagram-icon:hover {
+.social-icons .instagram-icon:hover {
   background-color: #c13584;
   border: 2px solid #c13584;
   -webkit-transition: 0.2s;
@@ -319,17 +316,17 @@
           box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
 }
 
-.instagram-icon:hover path {
+.social-icons .instagram-icon:hover path {
   fill: #ffffff;
   opacity: 1;
 }
 
-.instagram-icon:active {
+.social-icons .instagram-icon:active {
   background-color: #8f2762;
   border: 2px solid #8f2762;
 }
 
-.twitter-icon:hover {
+.social-icons .twitter-icon:hover {
   background-color: #1da1f2;
   border: 2px solid #1da1f2;
   -webkit-transition: 0.2s;
@@ -338,17 +335,17 @@
           box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
 }
 
-.twitter-icon:hover path {
+.social-icons .twitter-icon:hover path {
   fill: #ffffff;
   opacity: 1;
 }
 
-.twitter-icon:active {
+.social-icons .twitter-icon:active {
   background-color: #177fbf;
   border: 2px solid #177fbf;
 }
 
-.youtube-icon:hover {
+.social-icons .youtube-icon:hover {
   background-color: #ff0000;
   border: 2px solid #ff0000;
   -webkit-transition: 0.2s;
@@ -357,26 +354,31 @@
           box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
 }
 
-.youtube-icon:hover path {
+.social-icons .youtube-icon:hover path {
   fill: #ffffff;
   opacity: 1;
 }
 
-.youtube-icon:active {
+.social-icons .youtube-icon:active {
   background-color: #cc0000;
   border: 2px solid #cc0000;
 }
 
 @media only screen and (max-width: 980px) {
-  .media-wrapper {
-    max-width: 90%;
-    margin: 0 auto;
-  }
   .right {
     display: none;
   }
+  .left {
+    background-color: unset;
+    width: 980px;
+    margin: 0 auto;
+  }
   body {
     background-image: url(/img/bg.jpg);
+  }
+  .media-wrapper {
+    max-width: 90%;
+    margin: 0 auto;
   }
   .wrapper {
     padding-top: 10px;
@@ -391,20 +393,15 @@
   .menu a {
     font-size: 14px;
   }
+  .menu li {
+    padding-right: 20px;
+  }
   .menu li:first-child {
     padding-left: 15px;
     margin-right: auto;
   }
   .menu li:nth-child(2) {
     display: none;
-  }
-  .menu li {
-    padding-right: 20px;
-  }
-  .left {
-    background-color: unset;
-    width: 980px;
-    margin: 0 auto;
   }
   .subscription-box {
     background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f2f5fa));
@@ -453,13 +450,8 @@
     margin-top: 20px;
   }
   .social-icons {
-    padding-bottom: 30px;
-  }
-  .social-icons::before {
-    margin: 0 auto;
-  }
-  .social-icons {
     margin-top: 20px;
+    padding-bottom: 30px;
   }
   .social-icons::before {
     margin-bottom: 20px;
