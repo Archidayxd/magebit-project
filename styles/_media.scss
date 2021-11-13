@@ -1,0 +1,94 @@
+@import "_colors";
+@media only screen and (max-width: 980px) {
+  .right {
+    display: none;
+  }
+  .left {
+    background-color: unset;
+    width: 980px;
+    margin: 0 auto;
+  }
+  body {
+    background-image: url(/img/bg.jpg);
+  }
+  .media-wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .wrapper {
+    padding-top: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .menu {
+    width: 100%;
+    height: 66px;
+    background-color: #ffffff;
+    a {
+      font-size: 14px;
+    }
+    li {
+      padding-right: 20px;
+    }
+    li:first-child {
+      padding-left: 15px;
+      margin-right: auto;
+    }
+    li:nth-child(2) {
+      display: none;
+    }
+  }
+  .subscription-box {
+    background: linear-gradient(180deg, #ffffff 0%, $white-color 100%);
+    margin: 0 auto;
+    max-width: 90%;
+  }
+  .subscription-form {
+    margin-top: 188px;
+    padding-top: 30px;
+  }
+
+  .subscription {
+    &__title {
+      font-size: 24px;
+      bottom: 10px;
+    }
+    &__subtitle {
+      font-size: 14px;
+    }
+
+    &__input {
+      padding-left: 0px;
+      padding-top: 20px;
+
+      button {
+        margin-left: -40px;
+        height: 60px;
+        width: 40px;
+        border: 0;
+      }
+      input {
+        height: 60px;
+        padding-left: 15px;
+        &::placeholder {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &__terms {
+      margin-top: 20px;
+    }
+  }
+
+  .social-icons {
+    margin-top: 20px;
+    padding-bottom: 30px;
+    &::before {
+      margin-bottom: 20px;
+    }
+    ul {
+      padding-right: 10px;
+    }
+  }
+}

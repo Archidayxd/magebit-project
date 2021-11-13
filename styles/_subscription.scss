@@ -1,0 +1,121 @@
+@import "_colors";
+.subscription-form {
+  margin-top: 234px;
+}
+
+.sub-wrapper {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.subscription {
+  &__title {
+    font-family: Georgia, sans-serif;
+    font-size: 32px;
+    line-height: 44px;
+    position: relative;
+    bottom: 15px;
+    color: $black-color;
+  }
+  &__subtitle {
+    color: $grey-color;
+  }
+
+  &__input {
+    padding-top: 50px;
+    padding-left: 100px;
+    button {
+      width: 83px;
+      height: 60px;
+      position: absolute;
+      border-style: none;
+      background-color: white;
+      text-align: center;
+      padding-top: 4px;
+      padding-right: 20px;
+
+      &:hover {
+        background-color: rgb(192, 192, 192);
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__input input {
+    height: 60px;
+    width: 100%;
+    border-style: none;
+    border-left: 4px solid $blue-color;
+    font-size: 25px;
+    padding: 10px;
+    padding-left: 50px;
+  }
+  &__input input:hover {
+    box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+  }
+
+  &__input input:focus {
+    box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+  }
+
+  &__input input::placeholder {
+    font-size: 18px;
+  }
+
+  &__input input:focus::placeholder {
+    color: transparent;
+    transition: 0.2s;
+  }
+
+  &__checkbox {
+    .checkbox {
+      opacity: 0;
+      position: relative;
+      height: 26px;
+      width: 24px;
+      left: 30px;
+      bottom: 2px;
+      z-index: 1;
+    }
+  }
+
+  &__checkbox-fake {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border: 1px solid $border-color;
+    position: relative;
+    border-radius: 3px;
+  }
+
+  &__checkbox-fake::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    height: 26px;
+    width: 26px;
+    background: url(/img/ic_checkmark.svg) no-repeat center center;
+    background-color: $blue-color;
+    border-radius: 3px;
+    opacity: 0;
+    transition: 0.2s;
+  }
+  .checkbox:checked + &__checkbox-fake::before {
+    opacity: 1;
+  }
+  &__terms {
+    margin-top: 53px;
+    display: flex;
+    align-items: center;
+    color: $grey-color;
+    div:first-child {
+      padding-right: 10px;
+    }
+    a {
+      color: $black-color;
+    }
+  }
+}

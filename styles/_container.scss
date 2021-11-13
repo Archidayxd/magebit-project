@@ -1,0 +1,23 @@
+@import "_colors";
+.left {
+  background-color: $white-color;
+  max-height: 100%;
+  width: 680px;
+}
+
+.right img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 114px;
+}
