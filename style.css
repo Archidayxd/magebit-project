@@ -252,6 +252,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 90%;
 }
 
 .facebook-icon:hover {
@@ -377,32 +378,40 @@
   }
   .subscription-form {
     margin-top: 188px;
-    padding-top: 50px;
+    padding-top: 30px;
   }
   .subscription__title {
     font-size: 24px;
+    bottom: 10px;
   }
   .subscription__subtitle {
     font-size: 14px;
   }
   .subscription__input {
     padding-left: 0px;
+    padding-top: 20px;
   }
   .subscription__input input {
     height: 60px;
     padding-left: 15px;
   }
+  .subscription__terms {
+    margin-top: 20px;
+  }
   .social-icons {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+  }
+  .social-icons::before {
+    margin: 0 auto;
   }
   .subscription__input button {
     display: none;
   }
   .social-icons {
-    margin-top: 30px;
+    margin-top: 20px;
   }
   .social-icons::before {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .social-icons ul {
     padding-right: 10px;
