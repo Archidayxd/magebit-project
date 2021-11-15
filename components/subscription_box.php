@@ -1,8 +1,8 @@
   <div class="subscription-box">
       <div class="subscription-form">
           <div class="media-wrapper">
-              <div class="subscription__title sub-wrapper">Subscribe to newsletter</div>
-              <div class="subscription__subtitle sub-wrapper">Subscribe to our newsletter and get 10% discount on pineapple glasses.</div>
+              <div class="subscription__title sub-wrapper" id="title">Subscribe to newsletter</div>
+              <div class="subscription__subtitle sub-wrapper" id="subtitle">Subscribe to our newsletter and get 10% discount on pineapple glasses.</div>
               <div class="subscription__input">
                   <form id="form" action="/" method="GET">
                       <input type="email" placeholder="Type your email address here…" name="subscription" id="email" onkeyup="checkEmail()">

@@ -51,5 +51,8 @@ form.addEventListener("submit" , (e) =>{
         errorElement.innerText = errorMessages.join("\r\n")
         form.classList.add("invalid")
         form.classList.remove("valid")
+    } else{
+        document.getElementById("title").innerText = "Thanks for subscribing!" 
+        document.getElementById("subtitle").innerText = "You have successfully subscribed to our email listing. Check your email for the discount code." 
     }
 })
