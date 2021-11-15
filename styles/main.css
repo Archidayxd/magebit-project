@@ -251,6 +251,16 @@
   color: #c71919;
 }
 
+.succes-image img {
+  display: none;
+  margin-bottom: 31px;
+}
+
+.upper {
+  position: relative;
+  bottom: 100px;
+}
+
 .social-icons {
   margin-top: 50px;
 }
@@ -467,6 +477,9 @@
   }
   .social-icons ul {
     padding-right: 10px;
+  }
+  .upper {
+    bottom: 0px;
   }
 }
 

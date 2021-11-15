@@ -5,6 +5,7 @@ let emailCheck = document.getElementById("email");
 let checkBox = document.getElementById("checkBox");
 let subButton = document.getElementById("subButton");
 
+
 window.onload = function() {
     emailCheck.value = "";
     checkBox.checked = false;
@@ -52,7 +53,14 @@ form.addEventListener("submit" , (e) =>{
         form.classList.add("invalid")
         form.classList.remove("valid")
     } else{
+        e.preventDefault()
         document.getElementById("title").innerText = "Thanks for subscribing!" 
         document.getElementById("subtitle").innerText = "You have successfully subscribed to our email listing. Check your email for the discount code." 
+        document.getElementById("form").style.display = "none"
+        document.getElementById("checkBox").style.display = "none"
+        document.getElementById("checkboxLabel").style.display = "none"
+        document.getElementById("checkboxFake").style.display = "none"
+        document.getElementById("succesImage").style.display = "block"
+        document.getElementById("socialIcons").classList.add("upper")
     }
 })
