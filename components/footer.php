@@ -32,6 +32,7 @@
  </div>
  <div class="right"><img src="/img/bg.jpg" alt=""></div>
  </div>
+ <script src="/scripts/script.js"></script>
  </body>
 
  </html>
