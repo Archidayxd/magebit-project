@@ -22,4 +22,5 @@
                   </div>
                   <div class="subscription__service" id="checkboxLabel">I agree to <a href="#">terms of service</a></div>
               </div>
+              <span id="status"></span>
           </div>
