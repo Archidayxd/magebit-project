@@ -62,5 +62,6 @@ form.addEventListener("submit" , (e) =>{
         document.getElementById("checkboxFake").style.display = "none"
         document.getElementById("succesImage").style.display = "block"
         document.getElementById("socialIcons").classList.add("upper")
+        document.getElementById("error").style.display = "none"
     }
 })

@@ -8,8 +8,6 @@ if (isset($_POST["email"])) {
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $sql = "INSERT INTO `email`(`email`) VALUES ('$email')";
         $result = mysqli_query($con, $sql);
-    } else {
-        echo "incorrect email";
     }
 
 
