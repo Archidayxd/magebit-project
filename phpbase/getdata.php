@@ -5,10 +5,13 @@ if (isset($_POST["email"])) {
 
     include_once 'dbcon.php';
 
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $sql = "INSERT INTO `email`(`email`) VALUES ('$email')";
+        $result = mysqli_query($con, $sql);
+    } else {
+        echo "incorrect email";
+    }
 
-    $sql = "INSERT INTO `email`(`email`) VALUES ('$email')";
-
-    $result = mysqli_query($con, $sql);
 
     if ($result == true) {
         echo "<h3>Succes!!!</h3>";
