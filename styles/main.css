@@ -264,6 +264,7 @@
 
 #error {
   color: #c71919;
+  position: absolute;
 }
 
 .succes-image img {
@@ -482,6 +483,9 @@
   }
   .subscription__terms {
     margin-top: 20px;
+  }
+  #error {
+    position: static;
   }
   .social-icons {
     margin-top: 20px;
