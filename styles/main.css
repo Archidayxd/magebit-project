@@ -110,13 +110,18 @@
 }
 
 .subscription__input button:hover {
-  background-color: silver;
+  background-color: #e3e3e4;
   cursor: pointer;
 }
 
 .subscription__input button:disabled {
   background-color: white;
   cursor: auto;
+}
+
+.subscription__input button .icon-arrow-right2 {
+  font-size: 24px;
+  color: #6a707b;
 }
 
 .subscription__input input {
@@ -130,13 +135,13 @@
 }
 
 .subscription__input input:hover {
-  -webkit-box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
-          box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+  -webkit-box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+          box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
 }
 
 .subscription__input input:focus {
-  -webkit-box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
-          box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+  -webkit-box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+          box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
 }
 
 .subscription__input input::-webkit-input-placeholder {
@@ -280,6 +285,11 @@
   margin: 0 auto;
 }
 
+.social-icons ul a {
+  text-decoration: none;
+  color: #6a707b;
+}
+
 .social-icons ul li {
   border: 2px solid #e3e3e4;
   border-radius: 50%;
@@ -316,9 +326,8 @@
           box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
 }
 
-.social-icons .facebook-icon:hover path {
-  fill: #ffffff;
-  opacity: 1;
+.social-icons .facebook-icon:hover span {
+  color: white;
 }
 
 .social-icons .facebook-icon:active {
@@ -335,9 +344,8 @@
           box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
 }
 
-.social-icons .instagram-icon:hover path {
-  fill: #ffffff;
-  opacity: 1;
+.social-icons .instagram-icon:hover span {
+  color: white;
 }
 
 .social-icons .instagram-icon:active {
@@ -354,9 +362,8 @@
           box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
 }
 
-.social-icons .twitter-icon:hover path {
-  fill: #ffffff;
-  opacity: 1;
+.social-icons .twitter-icon:hover span {
+  color: white;
 }
 
 .social-icons .twitter-icon:active {
@@ -373,9 +380,8 @@
           box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
 }
 
-.social-icons .youtube-icon:hover path {
-  fill: #ffffff;
-  opacity: 1;
+.social-icons .youtube-icon:hover span {
+  color: white;
 }
 
 .social-icons .youtube-icon:active {

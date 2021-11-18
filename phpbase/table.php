@@ -41,7 +41,7 @@
 
         echo " <table>
             <tr>
-                <th><a href='?order=Id&&sort=$sort'>Id</a></th>
+                <th><a href='?order=Id&&sort=$sort'>Id</th>
                 <th><a href='?order=email&&sort=$sort'>Email</a></th>
                 <th><a href='?order=time&&sort=$sort'>Time</a></th>
                 <th>Delete</th>

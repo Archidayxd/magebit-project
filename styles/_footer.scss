@@ -9,6 +9,10 @@
     list-style: none;
     max-width: 250px;
     margin: 0 auto;
+    a {
+      text-decoration: none;
+      color: $grey-color;
+    }
     li {
       border: 2px solid $border-color;
       border-radius: 50%;
@@ -30,71 +34,68 @@
     justify-content: center;
     max-width: 90%;
   }
+
   .facebook-icon {
     &:hover {
-      background-color: #4267b2;
-      border: 2px solid #4267b2;
+      background-color: $facebook;
+      border: 2px solid $facebook;
       transition: 0.2s;
-      box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
-      path {
-        fill: #ffffff;
-        opacity: 1;
+      box-shadow: $box-shadow;
+      span {
+        color: white;
       }
     }
     &:active {
-      background-color: #2f4a80;
-      border: 2px solid #2f4a80;
+      background-color: $facebook-active;
+      border: 2px solid $facebook-active;
     }
   }
 
   .instagram-icon {
     &:hover {
-      background-color: #c13584;
-      border: 2px solid #c13584;
+      background-color: $instagram;
+      border: 2px solid $instagram;
       transition: 0.2s;
-      box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
-      path {
-        fill: #ffffff;
-        opacity: 1;
+      box-shadow: $box-shadow;
+      span {
+        color: white;
       }
     }
     &:active {
-      background-color: #8f2762;
-      border: 2px solid #8f2762;
+      background-color: $instagram-active;
+      border: 2px solid $instagram-active;
     }
   }
 
   .twitter-icon {
     &:hover {
-      background-color: #1da1f2;
-      border: 2px solid #1da1f2;
+      background-color: $twitter;
+      border: 2px solid $twitter;
       transition: 0.2s;
-      box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
-      path {
-        fill: #ffffff;
-        opacity: 1;
+      box-shadow: $box-shadow;
+      span {
+        color: white;
       }
     }
     &:active {
-      background-color: #177fbf;
-      border: 2px solid #177fbf;
+      background-color: $twitter-active;
+      border: 2px solid $twitter-active;
     }
   }
 
   .youtube-icon {
     &:hover {
-      background-color: #ff0000;
-      border: 2px solid #ff0000;
+      background-color: $youtube;
+      border: 2px solid $youtube;
       transition: 0.2s;
-      box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
-      path {
-        fill: #ffffff;
-        opacity: 1;
+      box-shadow: $box-shadow;
+      span {
+        color: white;
       }
     }
     &:active {
-      background-color: #cc0000;
-      border: 2px solid #cc0000;
+      background-color: $youtube-active;
+      border: 2px solid $youtube-active;
     }
   }
 }
