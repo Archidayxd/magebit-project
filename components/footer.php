@@ -23,7 +23,9 @@
         </a>
     </ul>
 </div>
-<a href="/phpbase/table.php">Get acces to mysql Table</a>
+<div class="phptable">
+    <a href="/phpbase/table.php">Get acces to mysql Table</a>
+</div>
 </div>
 </div>
 </div>

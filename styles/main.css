@@ -1,5 +1,8 @@
-.left {
+body {
   background-color: #f2f5fa;
+}
+
+.left {
   max-height: 100%;
   max-width: 844px;
   width: 1110px;
@@ -268,7 +271,6 @@
 }
 
 .succes-image img {
-  display: none;
   margin-bottom: 31px;
 }
 
@@ -397,6 +399,11 @@
 .social-icons .youtube-icon:active {
   background-color: #cc0000;
   border: 2px solid #cc0000;
+}
+
+.phptable {
+  padding-top: 10%;
+  text-align: center;
 }
 
 @media only screen and (max-width: 980px) {
