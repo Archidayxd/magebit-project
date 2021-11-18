@@ -31,7 +31,7 @@
       height: 68px;
       position: absolute;
       border-style: none;
-      background-color: white;
+      background-color: $full-white;
       text-align: center;
       padding-top: 4px;
       padding-right: 20px;
@@ -41,7 +41,7 @@
         cursor: pointer;
       }
       &:disabled {
-        background-color: white;
+        background-color: $full-white;
         cursor: auto;
       }
       .icon-arrow-right2 {
