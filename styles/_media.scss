@@ -12,7 +12,7 @@
     background-image: url(/img/bg.jpg);
   }
   .media-wrapper {
-    max-width: 90%;
+    max-width: 89%;
     margin: 0 auto;
   }
   .wrapper {
@@ -28,7 +28,7 @@
       font-size: 14px;
     }
     li {
-      padding-right: 20px;
+      padding-right: 6px;
     }
     li:first-child {
       padding-left: 15px;
@@ -41,20 +41,21 @@
   .subscription-box {
     background: linear-gradient(180deg, $full-white 0%, $white-color 100%);
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 91%;
   }
   .subscription-form {
-    margin-top: 188px;
-    padding-top: 30px;
+    margin-top: 55%;
+    padding-top: 28px;
   }
 
   .subscription {
-    &__title {
+    &__title span {
       font-size: 24px;
-      bottom: 10px;
     }
     &__subtitle {
       font-size: 14px;
+      padding-top: 5px;
+      line-height: 26px;
     }
 
     &__input {
@@ -84,13 +85,19 @@
     position: static;
   }
   .social-icons {
-    margin-top: 20px;
+    margin-top: 18px;
     padding-bottom: 30px;
     &::before {
       margin-bottom: 20px;
     }
     ul {
       padding-right: 10px;
+      justify-content: space-evenly;
+    }
+    &::before {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 6%;
     }
   }
   .upper {

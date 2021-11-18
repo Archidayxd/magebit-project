@@ -412,7 +412,7 @@
     background-image: url(/img/bg.jpg);
   }
   .media-wrapper {
-    max-width: 90%;
+    max-width: 89%;
     margin: 0 auto;
   }
   .wrapper {
@@ -429,7 +429,7 @@
     font-size: 14px;
   }
   .menu li {
-    padding-right: 20px;
+    padding-right: 6px;
   }
   .menu li:first-child {
     padding-left: 15px;
@@ -442,18 +442,19 @@
     background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f2f5fa));
     background: linear-gradient(180deg, #ffffff 0%, #f2f5fa 100%);
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 91%;
   }
   .subscription-form {
-    margin-top: 188px;
-    padding-top: 30px;
+    margin-top: 55%;
+    padding-top: 28px;
   }
-  .subscription__title {
+  .subscription__title span {
     font-size: 24px;
-    bottom: 10px;
   }
   .subscription__subtitle {
     font-size: 14px;
+    padding-top: 5px;
+    line-height: 26px;
   }
   .subscription__input {
     padding-left: 0px;
@@ -488,7 +489,7 @@
     position: static;
   }
   .social-icons {
-    margin-top: 20px;
+    margin-top: 18px;
     padding-bottom: 30px;
   }
   .social-icons::before {
@@ -496,6 +497,14 @@
   }
   .social-icons ul {
     padding-right: 10px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .social-icons::before {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 6%;
   }
   .upper {
     bottom: 0px;
