@@ -329,6 +329,10 @@ body {
           justify-content: center;
 }
 
+.social-icons .facebook-icon {
+  color: #b1b5bb;
+}
+
 .social-icons .facebook-icon:hover {
   background-color: #4267b2;
   border: 2px solid #4267b2;
@@ -345,6 +349,10 @@ body {
 .social-icons .facebook-icon:active {
   background-color: #2f4a80;
   border: 2px solid #2f4a80;
+}
+
+.social-icons .instagram-icon {
+  color: #b1b5bb;
 }
 
 .social-icons .instagram-icon:hover {
@@ -365,6 +373,10 @@ body {
   border: 2px solid #8f2762;
 }
 
+.social-icons .twitter-icon {
+  color: #b1b5bb;
+}
+
 .social-icons .twitter-icon:hover {
   background-color: #1da1f2;
   border: 2px solid #1da1f2;
@@ -381,6 +393,10 @@ body {
 .social-icons .twitter-icon:active {
   background-color: #177fbf;
   border: 2px solid #177fbf;
+}
+
+.social-icons .youtube-icon {
+  color: #b1b5bb;
 }
 
 .social-icons .youtube-icon:hover {

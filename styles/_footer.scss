@@ -35,6 +35,7 @@
   }
 
   .facebook-icon {
+    color: $social-icons;
     &:hover {
       background-color: $facebook;
       border: 2px solid $facebook;
@@ -51,6 +52,7 @@
   }
 
   .instagram-icon {
+    color: $social-icons;
     &:hover {
       background-color: $instagram;
       border: 2px solid $instagram;
@@ -67,6 +69,7 @@
   }
 
   .twitter-icon {
+    color: $social-icons;
     &:hover {
       background-color: $twitter;
       border: 2px solid $twitter;
@@ -83,6 +86,7 @@
   }
 
   .youtube-icon {
+    color: $social-icons;
     &:hover {
       background-color: $youtube;
       border: 2px solid $youtube;
