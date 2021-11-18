@@ -2,13 +2,14 @@
 .left {
   background-color: $white-color;
   max-height: 100%;
-  width: 680px;
+  max-width: 844px;
+  width: 1110px;
 }
 
 .right img {
   max-width: 100%;
   object-fit: cover;
-  height: 100vh;
+  height: 100%;
 }
 
 .container {
@@ -17,7 +18,7 @@
 }
 
 .wrapper {
-  max-width: 500px;
+  max-width: 480px;
   margin: 0 auto;
-  padding-top: 114px;
+  padding-top: 100px;
 }
