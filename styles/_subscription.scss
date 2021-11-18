@@ -1,6 +1,6 @@
 @import "_colors";
 .subscription-form {
-  margin-top: 226px;
+  margin-top: 33%;
 }
 
 .sub-wrapper {
@@ -14,7 +14,6 @@
     font-size: 32px;
     line-height: 44px;
     position: relative;
-    // bottom: 15px;
     color: $black-color;
   }
   &__subtitle {
@@ -24,8 +23,8 @@
   }
 
   &__input {
-    padding-top: 50px;
-    padding-left: 100px;
+    padding-top: 7.5%;
+    padding-left: 14.7%;
     button {
       width: 83px;
       height: 68px;
@@ -86,7 +85,6 @@
       position: relative;
       height: 26px;
       width: 24px;
-      // left: 30px;
       bottom: 2px;
       z-index: 1;
     }
@@ -121,7 +119,7 @@
     opacity: 1;
   }
   &__terms {
-    margin-top: 54px;
+    margin-top: 7.9%;
     display: flex;
     align-items: center;
     color: $grey-color;

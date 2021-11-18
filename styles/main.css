@@ -23,7 +23,7 @@
 .wrapper {
   max-width: 480px;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 14.8%;
 }
 
 .menu a {
@@ -78,7 +78,7 @@
 }
 
 .subscription-form {
-  margin-top: 226px;
+  margin-top: 33%;
 }
 
 .sub-wrapper {
@@ -101,8 +101,8 @@
 }
 
 .subscription__input {
-  padding-top: 50px;
-  padding-left: 100px;
+  padding-top: 7.5%;
+  padding-left: 14.7%;
 }
 
 .subscription__input button {
@@ -235,7 +235,7 @@
 }
 
 .subscription__terms {
-  margin-top: 54px;
+  margin-top: 7.9%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,7 +278,7 @@
 }
 
 .social-icons {
-  margin-top: 47px;
+  margin-top: 7%;
 }
 
 .social-icons ul {
@@ -315,7 +315,7 @@
 }
 
 .social-icons::before {
-  margin-bottom: 50px;
+  margin-bottom: 12.5%;
   content: "";
   display: -webkit-box;
   display: -ms-flexbox;
