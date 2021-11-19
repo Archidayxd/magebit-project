@@ -3,9 +3,8 @@ body {
 }
 
 .left {
-  max-height: 100%;
-  max-width: 844px;
-  width: 1110px;
+  width: 680px;
+  height: 100%;
 }
 
 .right img {
@@ -15,7 +14,18 @@ body {
   height: 100%;
 }
 
+.right {
+  background-image: url(/img/bg.jpg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .container {
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -418,7 +428,6 @@ body {
 }
 
 .phptable {
-  padding-top: 10%;
   text-align: center;
 }
 

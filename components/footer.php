@@ -29,9 +29,8 @@
 </div>
 </div>
 </div>
-<div class="right"><img src="/img/bg.jpg" alt="background image"></div>
+<div class="right"></div>
 </div>
-<script src="/scripts/dbsend.js"> </script>
 <script src="/scripts/script.js"></script>
 </body>
 
