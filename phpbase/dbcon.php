@@ -2,25 +2,18 @@
 
 class dbcon
 {
-    private $serverName;
-    private $userName;
-    private $password;
-    private $dbName;
+
 
     protected function connect()
     {
-        $this->serverName = "localhost:3307";
-        $this->userName = "foo";
-        $this->password = "bar";
-        $this->dbName = "emails";
+        $serverName = "localhost:3307";
+        $userName = "foo";
+        $password = "bar";
+        $dbName = "emails";
 
-
-        $con = new mysqli($this->serverName, $this->userName, $this->password, $this->dbName);
-        return $con;
+        return new mysqli($serverName, $userName, $password, $dbName);
     }
 }
-
-
 
 
 // $con = mysqli_connect($serverName, $userName, $password, $dbName);

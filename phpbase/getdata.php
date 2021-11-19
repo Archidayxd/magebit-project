@@ -1,19 +1,33 @@
 <?php
-if (isset($_POST["email"])) {
-    $email = $_POST["email"];
 
+include('dbcon.php');
 
-    include_once 'dbcon.php';
+class GetData extends dbcon {
 
-    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $sql = "INSERT INTO `email`(`email`) VALUES ('$email')";
-        $result = mysqli_query($con, $sql);
-    }
+    public function getFormData($postMessage) {
 
+        $con = $this->connect();
 
-    if ($result == true) {
-        echo "<h3>Succes!!!</h3>";
-    } else {
-        echo "<h3>Failed!</h3>";
+        if (isset($postMessage["email"])) {
+            $email = $postMessage["email"];
+
+            if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                $sql = "INSERT INTO `email`(`email`) VALUES ('$email')";
+                mysqli_query($con, $sql);
+                header('Location: ../success.php');
+            } else {
+                echo "error";
+            }
+        }
     }
 }
+
+$getData = new GetData;
+$getData->getFormData($_POST);
+
+//     if ($result == true) {
+//         echo "<h3>Succes!!!</h3>";
+//     } else {
+//         echo "<h3>Failed!</h3>";
+//     }
+// }

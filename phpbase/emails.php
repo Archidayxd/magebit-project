@@ -4,7 +4,6 @@ class email extends dbcon
 {
     protected function getAllEmails()
     {
-
         if (isset($_GET["order"])) {
             $order = $_GET["order"];
         } else {
