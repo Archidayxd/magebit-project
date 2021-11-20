@@ -17,8 +17,8 @@ class email extends dbcon
         }
 
         $sql = "SELECT * FROM email ORDER BY $order $sort";
-        $result = $this->connect()->query($sql);
-        $numRows = $result->num_rows;
+        $con = $this->connect()->query($sql);
+        $numRows = $con->num_rows;
 
         if ($numRows > 0) {
             $sort == "DESC" ? $sort = "ASC" : $sort = "DESC";
@@ -29,7 +29,7 @@ class email extends dbcon
                 <th><a href='?order=time&&sort=$sort'>Time</a></th>
                 <th>Delete</th>
             </tr>";
-            while ($row = $result->fetch_assoc()) {
+            while ($row = $con->fetch_assoc()) {
                 $data[] = $row;
             }
             return $data;

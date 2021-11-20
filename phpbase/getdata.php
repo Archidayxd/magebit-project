@@ -4,7 +4,6 @@ include('dbcon.php');
 
 class GetData extends dbcon
 {
-
     public function getFormData($postMessage)
     {
 

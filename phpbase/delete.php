@@ -7,13 +7,12 @@ class delete extends dbcon
 
     public function deleteItemById($id)
     {
-        $query = "DELETE FROM email WHERE Id = '$id'";
+        $sql = "DELETE FROM email WHERE Id = '$id'";
 
         $con = $this->connect();
+        $result = $con->query($sql);
 
-        $data = mysqli_query($con, $query);
-
-        if ($data) {
+        if ($result) {
             echo "The file was successfully deleted <a href='table.php'>BACK</a>";
         } else {
             echo "Failed to delete";

@@ -7,7 +7,6 @@ class searchClass extends dbcon
 
     public function search($requestArr)
     {
-
         $searchQuery = $requestArr["search"];
 
         if (isset($requestArr["order"])) {
@@ -26,7 +25,6 @@ class searchClass extends dbcon
 
         $query = "SELECT * FROM email WHERE CONCAT(email) LIKE '%$searchQuery%' ORDER BY $order $sort";
         $query_run = mysqli_query($con, $query);
-
 
         if (mysqli_num_rows($query_run) > 0) {
             $sort == "DESC" ? $sort = "ASC" : $sort = "DESC";
@@ -54,9 +52,9 @@ class searchClass extends dbcon
         } else {
             echo "No result <a href='table.php'>BACK</a>";
         }
-?><table><?php
-        }
+        echo "</table>";
     }
+}
 
-    $searchClass = new searchClass;
-    $searchClass->search($_GET);
+$searchClass = new searchClass;
+$searchClass->search($_GET);
