@@ -26,12 +26,3 @@
 <div class="phptable">
     <a href="/phpbase/tables.php">Get acces to mysql Table</a>
 </div>
-</div>
-</div>
-</div>
-<div class="right"></div>
-</div>
-<script src="/scripts/script.js"></script>
-</body>
-
-</html>

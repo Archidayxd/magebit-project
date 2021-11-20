@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/main.css">
     <title>Document</title>
-    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/1da7b58c0d/UntitledProject/style.css">
+    <link rel="stylesheet" href="/fonts/style.css">
 </head>
 
 <body>
@@ -25,60 +25,65 @@
             <div class="subscription-box">
                 <div class="subscription-form">
                     <div class="media-wrapper">
-                        <div class="succes-image sub-wrapper"><img id="succesImage" src="/img/Union.svg" alt="cup image"></div>
                         <div class="subscription__title sub-wrapper" id="title"><span>Subscribe to newsletter</span></div>
                         <div class="subscription__subtitle sub-wrapper" id="subtitle"><span>Subscribe to our newsletter and get 10% discount on pineapple glasses.</span></div>
+            
                         <div class="subscription__input">
-                            <form id="form" action="/" method="GET" class="form">
-                                <input type="email" placeholder="Type your email address here…" name="subscription" id="email" onkeyup="checkEmail()">
-                                <button type="submit" name="subscription" id="subButton" onclick="subButtonTest()">
+            
+                            <form id="form" action="/phpbase/GetData.php" method="POST" class="form">
+            
+                                <input type="email" placeholder="Type your email address here…" name="email" id="email" onkeyup="checkEmail()">
+                                <button type="submit" name="subscribe" id="subButton" onclick="subButtonTest()">
                                     <span class="icon-arrow-right2"></span>
                                 </button>
+                                <div id="error"><span>Please provide a valid e-mail address</span></div>
+                                <div class="subscription__terms terms-wrapper">
+                                    <div class="subscription__checkbox">
+                                        <label class="subscription__checkbox-label"></label>
+                                        <input type="checkbox" class="checkbox" name="terms" id="checkBox" required onclick="termsChanged()">
+                                        <span class="subscription__checkbox-fake" id="checkboxFake"></span>
+                                    </div>
+                                    <div class="subscription__service" id="checkboxLabel"><span>I agree to <a href="#">terms of service</a></span></div>
+                                </div>
+                                <!-- <span id="error" class="sub-wrapper"></span> -->
+                                <span id="status"></span>
                             </form>
-                            <span id="error"></span>
                         </div>
-                        <div class="subscription__terms sub-wrapper">
-                            <div class="subscription__checkbox">
-                                <label class="subscription__checkbox-label"></label>
-                                <input type="checkbox" class="checkbox" id="checkBox" onclick="termsChanged()">
-                                <span class="subscription__checkbox-fake" id="checkboxFake"></span>
-                            </div>
-                            <div class="subscription__service" id="checkboxLabel"><span>I agree to <a href="#">terms of service</a></span></div>
-                        </div>
-                        <span id="status"></span>
                     </div>
                     <div class="border-line"></div>
-                    <div class="social-icons sub-wrapper" id="socialIcons">
-                        <ul>
-                            <a href="#">
-                                <li class="facebook-icon">
-                                    <span class="icon-facebook"></span>
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li class="instagram-icon">
-                                    <span class="icon-instagram"></span>
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li class="twitter-icon">
-                                    <span class="icon-twitter"></span>
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li class="youtube-icon">
-                                    <span class="icon-youtube"></span>
-                                </li>
-                            </a>
-                        </ul>
-                    </div>
-                    <a href="/phpbase/table.php">Get acces to mysql Table</a>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="right"><img src="/img/bg.jpg" alt="background image"></div>
-                    </div>
-                    <script src="/scripts/dbsend.js"> </script>
-                    <script src="/scripts/script.js"></script>
-                    </body>
-                    </html>
+<div class="social-icons sub-wrapper" id="socialIcons">
+    <ul>
+        <a href="#">
+            <li class="facebook-icon">
+                <span class="icon-facebook"></span>
+            </li>
+        </a>
+        <a href="#">
+            <li class="instagram-icon">
+                <span class="icon-instagram"></span>
+            </li>
+        </a>
+        <a href="#">
+            <li class="twitter-icon">
+                <span class="icon-twitter"></span>
+            </li>
+        </a>
+        <a href="#">
+            <li class="youtube-icon">
+                <span class="icon-youtube"></span>
+            </li>
+        </a>
+    </ul>
+</div>
+<div class="phptable">
+    <a href="/phpbase/tables.php">Get acces to mysql Table</a>
+</div>
+</div>
+</div>
+</div>
+<div class="right"></div>
+</div>
+<script src="/scripts/script.js"></script>
+</body>
+
+</html>
