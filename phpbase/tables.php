@@ -15,15 +15,12 @@ include("view.php");
 </head>
 
 <body>
-    <form action="search.php" method="GET">
+    <form action="search.php" method="GET" style="display: inline-block;">
         <input type="text" name="search" required value="<?php if (isset($_GET['search'])) {
                                                                 echo $_GET['search'];
                                                             } ?>">
         <button type="submit">Search</button>
     </form>
-    <!-- <form action="download.php" method="POST">
-        <a class="exportCSV" href="download.php">Export to CSV</a>
-    </form> -->
     <table>
         <?php
         $emails = new view();
