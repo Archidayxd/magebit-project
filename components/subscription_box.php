@@ -5,14 +5,14 @@
             <div class="subscription__subtitle sub-wrapper" id="subtitle"><span>Subscribe to our newsletter and get 10% discount on pineapple glasses.</span></div>
 
             <div class="subscription__input">
-                <span id="error">Please provide a valid e-mail address</span>
+
                 <form id="form" action="/phpbase/GetData.php" method="POST" class="form">
 
                     <input type="email" placeholder="Type your email address here…" name="email" id="email" onkeyup="checkEmail()">
                     <button type="submit" name="subscribe" id="subButton" onclick="subButtonTest()">
                         <span class="icon-arrow-right2"></span>
                     </button>
-
+                    <div id="error"><span>Please provide a valid e-mail address</span></div>
                     <div class="subscription__terms terms-wrapper">
                         <div class="subscription__checkbox">
                             <label class="subscription__checkbox-label"></label>
