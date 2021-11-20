@@ -13,7 +13,7 @@ class view extends email
                 echo "<tr><td><input type='checkbox' name='xport[]' value='{$data['Id']}'>" . $data["Id"] . "</td><td>" . $data["email"] . "</td><td>" . $data["time"] . "</td><td> <a href='delete.php?id=$data[Id]'>Delete </a>" . "</tr>";
             }
             ?>
-            <button type="sumbit">Export to CSV</button>
+            <button type="sumbit">Export CSV</button>
         </form>
 <?php
     }

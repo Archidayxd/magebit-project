@@ -30,33 +30,33 @@ class searchClass extends dbcon
 
         if (mysqli_num_rows($query_run) > 0) {
             $sort == "DESC" ? $sort = "ASC" : $sort = "DESC";
-?>
+            echo "
             <a href='table.php'>BACK</a>
             <table>
                 <tr>
-                    <th><a href='?search=<?= $searchQuery ?>&order=Id&sort=<?= $sort ?>'>Id</th>
-                    <th><a href='?search=<?= $searchQuery ?>&order=email&sort=<?= $sort ?>'>Email</a></th>
-                    <th><a href='?search=<?= $searchQuery ?>&order=time&sort=<?= $sort ?>'>Time</a></th>
+                    <th><a href='?search=$searchQuery&order=Id&sort=$sort'>Id</th>
+                    <th><a href='?search=$searchQuery&order=Email&sort=$sort'>Email</th>
+                    <th><a href='?search=$searchQuery&order=Time&sort=$sort'>Time</th>
                     <th>Delete</th>
                 </tr>
-                <?php
-                foreach ($query_run as $row) {
-                ?>
-                    <tr>
-                        <td><?= $row['Id']; ?></td>
-                        <td><?= $row['email']; ?></td>
-                        <td><?= $row['time']; ?></td>
-                        <td><?= "<a href='delete.php?id=$row[Id]'>Delete </a>" ?></td>
-                    </tr>
+                ";
+            foreach ($query_run as $row) {
+                echo "
+                <tr>
+                    <td>$row[Id]</td>
+                    <td>$row[email]</td>
+                    <td>$row[time]</td>
+                    <td><a href='delete.php?id=$row[Id]'>Delete</a></td>
+                </tr>
 
-            <?php
-                }
-            } else {
-                echo "No result <a href='table.php'>BACK</a>";
+        ";
             }
-            ?><table><?php
-                    }
-                }
+        } else {
+            echo "No result <a href='table.php'>BACK</a>";
+        }
+?><table><?php
+        }
+    }
 
-                $searchClass = new searchClass;
-                $searchClass->search($_GET);
+    $searchClass = new searchClass;
+    $searchClass->search($_GET);
