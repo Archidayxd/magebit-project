@@ -42,7 +42,8 @@ if(emailCheck.value.match(pattern)){
 form.addEventListener("submit" , (e) =>{
     let errorMessages=[]
     if(emailCheck.value == "" || emailCheck.value==null){
-        errorMessages.push("Please provide a valid e-mail address")
+        errorMessages.push("Email address is required")
+        errorElement.style.visibility = "visible"
         console.log(errorMessages)
     }
 
