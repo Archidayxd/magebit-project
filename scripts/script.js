@@ -48,6 +48,7 @@ form.addEventListener("submit" , (e) =>{
 
     if(!checkBox.checked){
         errorMessages.push("You must accept the terms and conditions")
+        e.preventDefault()
     }
 
 
