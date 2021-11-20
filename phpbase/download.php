@@ -10,7 +10,7 @@ class DownloadCsv extends dbcon
         $con = $this->connect();
 
         if (!isset($_POST['xport']) or !is_array($_POST['xport'])) {
-            exit('No rows selected for export');
+            exit("No rows are selected <a href='table.php'>BACK</a>");
         }
 
         $filename = "emails_list.csv";

@@ -2,9 +2,11 @@
 
 include('dbcon.php');
 
-class delete extends dbcon {
+class delete extends dbcon
+{
 
-    public function deleteItemById($id) {
+    public function deleteItemById($id)
+    {
         $query = "DELETE FROM email WHERE Id = '$id'";
 
         $con = $this->connect();
@@ -12,7 +14,7 @@ class delete extends dbcon {
         $data = mysqli_query($con, $query);
 
         if ($data) {
-            echo "successfully deleted! <a href='tables.php'>BACK</a>";
+            echo "The file was successfully deleted <a href='table.php'>BACK</a>";
         } else {
             echo "Failed to delete";
         }
