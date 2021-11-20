@@ -21,6 +21,9 @@ include("view.php");
                                                             } ?>">
         <button type="submit">Search</button>
     </form>
+    <!-- <form action="download.php" method="POST">
+        <a class="exportCSV" href="download.php">Export to CSV</a>
+    </form> -->
     <table>
         <?php
         $emails = new view();
