@@ -5,7 +5,6 @@ let emailCheck = document.getElementById("email");
 let checkBox = document.getElementById("checkBox");
 let subButton = document.getElementById("subButton");
 
-
 window.onload = function() {
     emailCheck.value = "";
     checkBox.checked = false;
@@ -22,17 +21,21 @@ if(emailCheck.value.match(pattern)){
     form.classList.remove("invalid")
     subButton.disabled = false
     errorElement.textContent = ""
+    errorElement.textContent = "Please provide a valid e-mail address"
+    errorElement.style.visibility = "hidden"
     if(/.co\s*$/.test(emailCheck.value)){
         form.classList.add("invalid")
         form.classList.remove("valid")
         subButton.disabled = true;
         errorElement.textContent = "We are not accepting subscriptions from Colombia emails"
+        errorElement.style.visibility = "visible"
     }
 } else{
     form.classList.add("invalid")
     form.classList.remove("valid")
     subButton.disabled = true;
     errorElement.textContent = "Please provide a valid e-mail address"
+    errorElement.style.visibility = "visible"
 }
 }
 
@@ -40,17 +43,19 @@ form.addEventListener("submit" , (e) =>{
     let errorMessages=[]
     if(emailCheck.value == "" || emailCheck.value==null){
         errorMessages.push("Please provide a valid e-mail address")
-        // console.log(errorMessages)
+        console.log(errorMessages)
     }
 
     if(!checkBox.checked){
         errorMessages.push("You must accept the terms and conditions")
     }
 
+
     if(errorMessages.length>0){
         e.preventDefault()
-        errorElement.innerText = errorMessages.join("\r\n")
+        console.log("error")
         form.classList.add("invalid")
         form.classList.remove("valid")
+        errorElement.innerText = errorMessages.join("\r\n")
     } 
 })
