@@ -17,7 +17,7 @@
             require("components/header.php");
             ?>
             <div class="subscription-box">
-                <div class="subscription-form">
+                <div class="subscription-succes">
                     <?php
                     require("components/success_box.php");
                     ?>

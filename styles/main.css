@@ -288,10 +288,6 @@ body {
   visibility: hidden;
 }
 
-.succes-image img {
-  margin-bottom: 31px;
-}
-
 .upper {
   position: relative;
   bottom: 100px;
@@ -547,6 +543,18 @@ body {
   .upper {
     bottom: 0px;
   }
+}
+
+.succes-image img {
+  margin-bottom: 25px;
+}
+
+.subscription-succes {
+  margin-top: 17.7%;
+}
+
+.title-succes {
+  padding-bottom: 6px;
 }
 
 * {
