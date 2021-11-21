@@ -26,10 +26,10 @@
     }
   }
   &::before {
-    margin-bottom: 12.5%;
+    margin-bottom: 12.6%;
     content: "";
     display: flex;
-    border: 1px solid $border-color;
+    border-top: 1px solid $border-color;
     width: 100%;
     justify-content: center;
   }

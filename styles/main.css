@@ -335,12 +335,12 @@ body {
 }
 
 .social-icons::before {
-  margin-bottom: 12.5%;
+  margin-bottom: 12.6%;
   content: "";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid #e3e3e4;
+  border-top: 1px solid #e3e3e4;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
