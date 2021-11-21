@@ -1,8 +1,8 @@
 <?php
 
-include('dbcon.php');
+include('DbCon.php');
 
-class searchClass extends dbcon
+class SearchClass extends DbCon
 {
 
     public function search($requestArr)
@@ -56,5 +56,5 @@ class searchClass extends dbcon
     }
 }
 
-$searchClass = new searchClass;
+$searchClass = new SearchClass;
 $searchClass->search($_GET);

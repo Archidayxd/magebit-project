@@ -1,8 +1,8 @@
 <?php
 
-include('dbcon.php');
+include('DbCon.php');
 
-class delete extends dbcon
+class Delete extends DbCon
 {
 
     public function deleteItemById($id)
@@ -20,5 +20,5 @@ class delete extends dbcon
     }
 }
 
-$delete = new delete;
+$delete = new Delete;
 $delete->deleteItemById($_GET["id"]);

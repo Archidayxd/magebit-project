@@ -1,8 +1,8 @@
 <?php
 
-include('dbcon.php');
+include('DbCon.php');
 
-class GetData extends dbcon
+class GetData extends DbCon
 {
     public function getFormData($postMessage)
     {

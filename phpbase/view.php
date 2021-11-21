@@ -1,6 +1,6 @@
 <?php
 
-class view extends email
+class View extends email
 {
     public function showAllEmails()
     {

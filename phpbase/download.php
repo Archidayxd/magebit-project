@@ -1,8 +1,8 @@
 <?php
 
-include("dbcon.php");
+include("DbCon.php");
 
-class DownloadCsv extends dbcon
+class DownloadCsv extends DbCon
 {
 
     public function download()

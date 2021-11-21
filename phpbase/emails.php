@@ -1,6 +1,6 @@
 <?php
 
-class email extends dbcon
+class Email extends DbCon
 {
     protected function getAllEmails()
     {

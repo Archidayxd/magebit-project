@@ -23,7 +23,7 @@ include("view.php");
     </form>
     <table>
         <?php
-        $emails = new view();
+        $emails = new View();
         $emails->showAllEmails();
         ?>
     </table>
