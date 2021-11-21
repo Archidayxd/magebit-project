@@ -16,7 +16,7 @@
     margin: 0 auto;
   }
   .wrapper {
-    padding-top: 10px;
+    padding-top: 1px;
     max-width: 100%;
     margin: 0 auto;
   }
@@ -27,12 +27,10 @@
     a {
       font-size: 14px;
     }
-    li {
-      padding-right: 6px;
-    }
     li:first-child {
-      padding-left: 15px;
+      padding-left: 20px;
       margin-right: auto;
+      padding-top: 9px;
     }
     li:nth-child(2) {
       display: none;
@@ -41,11 +39,11 @@
   .subscription-box {
     background: linear-gradient(180deg, $full-white 0%, $white-color 100%);
     margin: 0 auto;
-    max-width: 91%;
+    max-width: 88.7%;
   }
   .subscription-form {
-    margin-top: 55%;
-    padding-top: 28px;
+    margin-top: 56.2%;
+    padding-top: 26px;
   }
 
   .subscription {
@@ -78,7 +76,7 @@
     }
 
     &__terms {
-      margin-top: 20px;
+      margin-top: 2px;
     }
   }
   #error {
