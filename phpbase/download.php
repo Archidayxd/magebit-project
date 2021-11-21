@@ -13,7 +13,7 @@ class DownloadCsv extends DbCon
             exit("No rows are selected <a href='table.php'>BACK</a>");
         }
 
-        $filename = "emails_list.csv";
+        $fileName = "emails_list.csv";
         $fp = fopen('php://output', 'w');
 
         $sql = "SELECT * FROM email";
@@ -23,7 +23,7 @@ class DownloadCsv extends DbCon
         }
 
         header('Content-type: application/csv');
-        header('Content-Disposition: attachment; filename=' . $filename);
+        header('Content-Disposition: attachment; filename=' . $fileName);
 
         $ids = $_POST['xport'];
         array_walk($ids, function (&$value) {
