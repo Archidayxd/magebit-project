@@ -35,6 +35,9 @@
     li:nth-child(2) {
       display: none;
     }
+    li:last-child {
+      padding-right: 15px;
+    }
   }
   .subscription-box {
     background: linear-gradient(180deg, $full-white 0%, $white-color 100%);
