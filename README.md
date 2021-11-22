@@ -39,7 +39,7 @@ A page is created where all saved data can be seen:
 - It is possible to delete email addresses.
 - It is possible to select multiple emails using checkboxes and export them as CSV.
 
-  What not was done:
+What not was done:
 
 - It is not possible to filter email addresses by email providers
-- Data is validated also in PHP, and if JavaScript is disabled it "not" displays errors in the same place and (If JS disabled html and php checks if email is correct / ending on co or checkbox not checked, but in not shows errors in the «same» place as js do)
+- Data is validated also in PHP, and if JavaScript is disabled it not displays errors in the "same" place and (If JS disabled html and php checks if email is correct / ending on co or checkbox not checked, but in not shows errors in the «same» place as js do)
