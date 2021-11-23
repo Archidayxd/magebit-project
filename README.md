@@ -43,3 +43,4 @@ What NOT was done:
 
 - It is not possible to filter email addresses by email providers
 - Data is validated also in PHP, and if JavaScript is disabled it not displays errors in the "same" place and (If JS disabled html and php checks if email is correct / ending on co or checkbox not checked, but in not shows errors in the «same» place as js do)
+- No MVC pattern 
